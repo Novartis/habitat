@@ -1,0 +1,26 @@
+{
+    "awsAccountId": "123456789012",
+    "region": "us-east-1", 
+    "bucket": "habitat-test", 
+
+    "esDomain": "ADD_DOMAIN_NAME_HERE", 
+    "esEndpoint": "ES_ENDPOINT_HERE... .es.amazonaws.com", 
+    "esDocType": "habitat-testtype", 
+    "esHabitatIndex": "habitatunittest", 
+
+    "dataFilenameRegex": "^data/unittest-(?P<assayId>\\w+)-(?P<runId>\\d+)-\\w+.tif$", 
+    "inspectS3head": true, 
+    "getMetadataFromObject": true, 
+    "metafileMode": "disable", 
+    "metafileFormat": "json", 
+    "dataBodyParserMaxBytes": 40, 
+    "dataBodyParserModule": "defaultDataBodyParser", 
+
+    "attachMetadataToObject": true, 
+
+    "daysBeforeIA": 30, 
+    "daysBeforeGlacier": 60, 
+    "daysBeforeExpire": 90, 
+    "useVersioning": true, 
+    "useCrossRegionReplication": true
+}
